@@ -1,8 +1,13 @@
 ---
-- hosts: all
-  become: yes
-  tasks:
-  - name: install git
-    apt:
-      name: apache2
-      state: present
+ - hosts: all
+   become: yes
+   tasks:
+    - name: install apche2
+      apt:
+       name: apache2
+       state: present
+       when: anisble_os_family == "Debian" 
+
+
+
+
