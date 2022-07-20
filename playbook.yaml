@@ -6,7 +6,7 @@
       apt:
        name: apache2
        state: present
-       when: anisble_os_family == "Debian" 
+      
 
 
 
