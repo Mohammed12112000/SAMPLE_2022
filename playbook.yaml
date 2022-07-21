@@ -2,12 +2,7 @@
  - hosts: all
    become: yes
    tasks:
-    - name: install apche2
-      apt:
-       name: apache2
-       state: present
-      
-
-
-
-
+     - name: install apache2 all web servers via master sarver
+       apt:
+        name: apache2
+        state: present
