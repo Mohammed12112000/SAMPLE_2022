@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-    - name: install webserver  on ubuntu ansible nodes 
+    - name: install webserver on ubuntu sarver
       apt:
        name: "{{mywebsarverforubuntu}}"
        state: present 
