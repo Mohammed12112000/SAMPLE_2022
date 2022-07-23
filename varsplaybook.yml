@@ -1,0 +1,8 @@
+---
+- host: all
+  become: yes
+  tasks:
+    - name: "{{mywebsarverforubuntu}}"
+      apt:
+       state: present 
+       when: ansible_os_family=="Debian"
