@@ -2,7 +2,8 @@
 - hosts: all
   become: yes
   tasks:
-    - name: "{{mywebsarverforubuntu}}"
+    - name: install webserver  on ubuntu ansible nodes 
       apt:
+       name: "{{mywebsarverforubuntu}}"
        state: present 
        when: ansible_os_family=="Debian"
